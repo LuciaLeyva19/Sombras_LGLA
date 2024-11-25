@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+             x:Class="Sombras_LGLA.Sombra">
+    <Grid>
+        <StackLayout Orientation="Vertical"
+                     VerticalOptions="Center"
+                     Spacing="30">
+            <sh:Shadows CornerRadius="50" Shades="{sh:SingleShade Offset='0,10',
+                Opacity=0.7,
+                Color=#086A87}">
+                <ImageButton WidthRequest="100"
+                             HeightRequest="100"
+                             HorizontalOptions="Center"
+                             BackgroundColor="#086A87"
+                             CornerRadius="50"
+                             Source="https://i.ibb.co/48zZtsC/ordenador-portatil.png"
+                             Padding="13"/>
+
+
+            </sh:Shadows>
+            <sh:Shadows CornerRadius="15" Shades="{sh:SingleShade Offset='0,10',
+              Opacity=0.7,
+              Color=#04B4AE}">
+                <Frame WidthRequest="60"
+                       HeightRequest="60"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       BackgroundColor="#04B4AE"
+                       CornerRadius="15">
+                    <Image Source="https://i.ibb.co/WK5JfVw/raton.png"/>
+
+                </Frame>
+                
+
+
+            </sh:Shadows>
+            <sh:Shadows CornerRadius="15" Shades="{sh:SingleShade Offset='0,8',
+             Opacity=0.7,
+             Color=#0489B1}">
+
+                <BoxView WidthRequest="60"
+                         HeightRequest="60"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         BackgroundColor="#0489B1"
+                         CornerRadius="15"/>
+
+
+
+            </sh:Shadows>
+        </StackLayout>
+    </Grid>
+</ContentPage>
